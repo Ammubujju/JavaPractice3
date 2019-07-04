@@ -13,17 +13,11 @@ public class RemoveVowelsTest {
         String[] str2 = {"India", "pakistan", "uzbekistan", "melbourne"};
         String[] str = removeVowels.vowelsRemove(str2);
         String[] str1 = {"Ind", "pkstn", "zbkstn", "mlbrn"};
-        assertArrayEquals(str1, str);//checking expected and actual values
+        assertArrayEquals(str1, str);
 
 
     }
-    /*@Test
-    public void AllVowels() {
-        String[] str2 = {"aeiou"};
-        String[] str = oe.vowelsRemove(str2);
-        String[] str1 = {""};
-        assertArrayEquals(str1, str);
-    }*/
+
     @Test
     public void AllVowels() {
         removeVowels = new RemoveVowels();
@@ -31,9 +25,8 @@ public class RemoveVowelsTest {
 
         String[] str = removeVowels.vowelsRemove(str2);
         String[] str1 = {""};
-
-        assertArrayEquals(str1, str);//checking expected and actual values
-
+         //assert
+        assertArrayEquals(str1, str);
 
     }
 
@@ -44,24 +37,18 @@ public class RemoveVowelsTest {
 
         String[] str = removeVowels.vowelsRemove(str2);
         String[] str1 = {"d","","","f",} ;
-
-        assertArrayEquals(str1, str);//checking expected and actual values
-
+        //assert
+        assertArrayEquals(str1, str);
 
     }
-  /*ublic void nullPointer() {
-        removeVowels = new RemoveVowels();
-        String s = "";
 
-        String str = removeVowels.nullPointerException(s);
-        assertEquals("input string cannot be null",str);//checking expected and actual values
-    }*/
     @Test
 
     public void places2() {
         String str3 = "eaou";
         String result = removeVowels.removeVowels(str3);
-        assertEquals("", result);//checking expected and actual values
+        //assert
+        assertEquals("", result);
 
 
     }

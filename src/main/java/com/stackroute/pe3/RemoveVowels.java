@@ -7,7 +7,7 @@ public class RemoveVowels {
 
         for (int i = 0; i < instruments.length; i++) {
             instruments[i] = instruments[i].replaceAll("[aeiou]", "");
-            System.out.println(instruments[i]);
+           // System.out.println(instruments[i]);
         }
         return instruments;
 
@@ -22,7 +22,7 @@ public class RemoveVowels {
 
         return str;
     }
-    public String removeVowels(String str) {
+   public String removeVowels(String str) {
         str = str.replaceAll("[aeiou]", "");
 
         return str;

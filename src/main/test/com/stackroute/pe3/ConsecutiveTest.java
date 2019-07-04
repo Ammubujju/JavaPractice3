@@ -25,36 +25,39 @@ public class ConsecutiveTest {
     public void testConsecutiveNumbers() {
 
         String str = "10,11,12,13,14,15,16,17";
+        //assert
         assertEquals(
                 "check in sequential order if is it consecutive or not",
-                "consecutive", consecutive.getConsecutiveNumbers(str));//checking expected and actual values of consecutive numbers in sequential manner
-    }
+                "consecutive", consecutive.getConsecutiveNumbers(str));}
     @Test
     public void testConsecutiveNumber() {
         String str = "10,20,30,40,50,60";
+        //assert
         assertEquals(
                 "check is it non consecutive or not",
-                "non consecutive", consecutive.getConsecutiveNumbers(str));//checking expected and actual values which are not consecutive
+                "non consecutive", consecutive.getConsecutiveNumbers(str));
     }
     @Test
-    public void testConsecutive() {
+    public void givenInputsAreConsecutive() {
         String str = "11,10,9,8,7,6";
+        //assert
         assertEquals(
                 "check in reverse order if is it consecutive or not",
-                "consecutive", consecutive.getReverseConsecutiveNumbers(str));//checking expected and actual values of consecutive in reverse oreder
+                "consecutive", consecutive.getReverseConsecutiveNumbers(str));
     }
     @Test
-    public void testConsecutiveNegative() {
+    public void giveninputsToTestConsecutiveNegatives() {
         String str = "0,-1,-2,-3,-4,-5";
+        //assert
         assertEquals(
                 "check in reverse order if is it consecutive or not",
-                "consecutive", consecutive.getNegativeConsecutiveNumbers(str));//checking expected and actual values of negative values
-    }
+                "consecutive", consecutive.getNegativeConsecutiveNumbers(str));}
     @Test
-    public void testConsecutiveSame() {
+    public void givenInputsAreConsecutiveSame() {
         String str = "6,6,6,6,6,6";
+        //assert
         assertEquals(
                 "check in reverse order if is it consecutive or not",
-                "non consecutive", consecutive.getConsecutiveNumbers(str));//checking expected and actual values
+                "non consecutive", consecutive.getConsecutiveNumbers(str));
     }
 }
